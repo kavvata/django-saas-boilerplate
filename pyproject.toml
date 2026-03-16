@@ -1,6 +1,8 @@
 [project]
 name = ""
 version = "0.0.1"
+requires-python = ">=3.12"
+readme = "README.md"
 dependencies = [
     "django",
     "celery",
@@ -27,5 +29,7 @@ dependencies = [
     "django-celery-beat",
 ]
 
-[tool.uv]
-package = false
+[dependency-groups]
+dev = [
+    "django-stubs>=5.2.9",
+]
