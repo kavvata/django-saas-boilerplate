@@ -29,8 +29,4 @@ COPY . /app/
 # Install npm dependencies for Tailwind
 RUN python manage.py tailwind install --no-input; exit 0
 
-# Make entrypoint executable
-COPY entrypoint.sh /app/entrypoint.sh
-RUN chmod +x /app/entrypoint.sh
-
 ENTRYPOINT ["/app/entrypoint.sh"]
