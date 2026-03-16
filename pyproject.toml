@@ -1,32 +1,33 @@
 [project]
-name = ""
-version = "0.0.1"
-requires-python = ">=3.12"
+name = "django-saas-boilerplate"
+version = "0.1.0"
+description = "Add your description here"
 readme = "README.md"
+requires-python = ">=3.14"
 dependencies = [
-    "django",
-    "celery",
-    "redis",
-    "channels-redis<4.0",
-    "django-ninja",
-    "django-allauth",
-    "django-otp",
-    "qrcode",
-    "pillow",
-    "whitenoise",
-    "django-channels<4.0",
-    "daphne<4.0",
-    "gunicorn",
-    "python-dotenv",
-    "django-tailwind",
-    "django-browser-reload",
-    "uvicorn[standard]",
-    "psycopg2-binary",
-    "pyjwt",
-    "cryptography",
-    "celery-progress",
-    "gevent",
-    "django-celery-beat",
+ "celery>=5.6.2",
+ "celery-progress>=0.5",
+ "channels-redis<4.0",
+ "cryptography>=46.0.5",
+ "daphne<4.0",
+ "django>=6.0.3",
+ "django-allauth>=65.15.0",
+ "django-browser-reload>=1.21.0",
+ "django-celery-beat>=2.9.0",
+ "django-channels<4.0",
+ "django-ninja>=1.6.0",
+ "django-otp>=1.7.0",
+ "django-tailwind>=4.4.2",
+ "gevent>=25.9.1",
+ "gunicorn>=25.1.0",
+ "pillow>=12.1.1",
+ "psycopg2-binary>=2.9.11",
+ "pyjwt>=2.12.1",
+ "python-dotenv>=1.2.2",
+ "qrcode>=8.2",
+ "redis>=7.3.0",
+ "uvicorn[standard]>=0.42.0",
+ "whitenoise>=6.12.0",
 ]
 
 [dependency-groups]
