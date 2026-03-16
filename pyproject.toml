@@ -1,0 +1,31 @@
+[project]
+name = ""
+version = "0.0.1"
+dependencies = [
+    "django",
+    "celery",
+    "redis",
+    "channels-redis<4.0",
+    "django-ninja",
+    "django-allauth",
+    "django-otp",
+    "qrcode",
+    "pillow",
+    "whitenoise",
+    "django-channels<4.0",
+    "daphne<4.0",
+    "gunicorn",
+    "python-dotenv",
+    "django-tailwind",
+    "django-browser-reload",
+    "uvicorn[standard]",
+    "psycopg2-binary",
+    "pyjwt",
+    "cryptography",
+    "celery-progress",
+    "gevent",
+    "django-celery-beat",
+]
+
+[tool.uv]
+package = false
